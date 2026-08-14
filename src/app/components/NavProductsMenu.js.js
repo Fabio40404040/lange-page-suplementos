@@ -30,10 +30,6 @@ export function initNavProductsMenu(products) {
     wrapper.classList.contains("is-open") ? closePanel() : openPanel();
   }
 
-  // Abaixo de 561px o painel vira "position: fixed" (solto do botão,
-  // ver style.css), então o hover não faz sentido nesse tamanho de tela —
-  // só o clique deve abrir/fechar. Acima disso, o painel fica colado
-  // embaixo do botão e o hover funciona normalmente.
   function hoverEnabled() {
     return window.matchMedia("(hover: hover) and (min-width: 561px)").matches;
   }
