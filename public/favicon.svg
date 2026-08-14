@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Fundo -->
+  <rect width="512" height="512" rx="18" fill="#121310"/>
+
+  <!-- Escudo -->
+  <path
+    d="M256 62
+       L426 139
+       V273
+       C426 376 360 439 256 476
+       C152 439 86 376 86 273
+       V139 Z"
+    fill="none"
+    stroke="#C84F2D"
+    stroke-width="32"
+    stroke-linejoin="miter"/>
+
+  <!-- FBI -->
+  <text
+    x="256"
+    y="275"
+    text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="122"
+    font-weight="900"
+    letter-spacing="2"
+    fill="#D7C27F">FBI</text>
+
+  <!-- Detalhe inferior -->
+  <path
+    d="M166 318 L346 318 L256 344 Z"
+    fill="#C84F2D"/>
+</svg>
