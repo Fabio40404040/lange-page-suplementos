@@ -2,125 +2,278 @@
 // Base de dados dos produtos exibidos na landing page.
 // "date" = nome da pasta conforme a estrutura definida no projeto.
 
+import creatina300 from "../assets/img/creatina1.webp";
+import creatina2 from "../assets/img/creatina2.webp";
+import creatina3 from "../assets/img/creatina3.webp";
+import creatina4 from "../assets/img/creatina4.webp";
+import creatina5 from "../assets/img/creatina5.webp";
+import omega3 from "../assets/img/omega3.webp";
+import multivitaminico from "../assets/img/multivitaminico.webp";
+import preTreino from "../assets/img/pre-treino.webp";
+import xilitol1 from "../assets/img/xilitol1.webp";
+import xilitol2 from "../assets/img/xilitol2.webp";
+import vitaminaC from "../assets/img/vitamina-c.webp";
+import proteinBar from "../assets/img/protein-bar.webp";
+import wheyProtein from "../assets/img/whey-protein.webp";
+import omega3Multivitaminico from "../assets/img/omega3-multivitaminico.webp";
+import wheyCreatinaPreTreino from "../assets/img/whey-creatina-pre-treino.webp";
+
 export const products = [
   {
     id: "unidade",
     name: "Creatina - 1 Unidade 300g",
     description: "1 pote (100 doses). Ideal pra quem quer testar sem compromisso.",
     price: 79.9,
-    image: "./src/app/assets/img/creatina1.webp",
+    image: creatina300,
     badge: null,
   },
+
   {
     id: "kit-duplo",
     name: "Creatina - 2 Unidade 300g",
     description: "2 potes. Melhor custo-benefício pra manter a rotina sem parar.",
     price: 139.9,
-    image: "./src/app/assets/img/creatina2.webp",
+    image: creatina2,
     badge: "MAIS VENDIDO",
   },
+
   {
     id: "kit-trio",
     name: "Creatina - 3 Unidade 300g",
     description: "3 potes. Estoque pra vários meses de treino sem se preocupar.",
     price: 199.9,
-    image: "./src/app/assets/img/creatina3.webp",
+    image: creatina3,
     badge: null,
   },
+
   {
     id: "creatina-refil-500g",
     name: "Creatina - 1 unidade 500g",
-    description: "Creatina monohidratada pura, refil econômico de 500g (~166 doses de 3g). Mesma pureza da linha Soldiers, sem o custo do pote novo.",
+    description: "Creatina monohidratada pura, refil econômico de 500g.",
     price: 99.9,
-    image: "./src/app/assets/img/creatina4.webp",
+    image: creatina4,
     badge: null,
   },
+
   {
     id: "creatina-refil-500g-kit2",
     name: "Creatina - 2 unidade 500g",
-    description: "2 creatina de 500g (~332 doses no total). Pra quem já usa Soldiers e quer manter o estoque sem parar a rotina.",
+    description: "2 creatina de 500g.",
     price: 179.9,
-    image: "./src/app/assets/img/creatina5.webp",
+    image: creatina5,
     badge: "MAIS VENDIDO",
   },
+
   {
     id: "omega3-60",
     name: "Ômega3 - 60 Cápsulas",
-    description: "60 cápsulas de 1000mg de óleo de peixe. Cada porção (3 cáps) fornece 540mg de EPA e 360mg de DHA — suporte cardiovascular, cognitivo e anti-inflamatório.",
+    description: "60 cápsulas de 1000mg de óleo de peixe.",
     price: 74.9,
-    image: "./src/app/assets/img/omega3.webp",
+    image: omega3,
     badge: null,
   },
+
   {
     id: "multivitaminico-60",
     name: "Multivitamínico - 60 Cápsulas",
-    description: "60 cápsulas (1 ao dia, 2 meses de uso). Complexo com vitaminas A, C, D, E, B6, B12 e minerais como zinco e magnésio pra cobrir a rotina puxada.",
+    description: "60 cápsulas.",
     price: 54.9,
-    image: "./src/app/assets/img/multivitaminico.webp",
+    image: multivitaminico,
     badge: null,
   },
+
   {
     id: "pre-treino",
     name: "Pré-Treino Soldiers",
-    description: "Fórmula com cafeína (~200mg por dose), beta-alanina, citrulina malato e creatina. 1 dose (8g) diluída em água, 20–30 min antes do treino.",
+    description: "Fórmula com cafeína, beta-alanina, citrulina malato e creatina.",
     price: 99.9,
-    image: "./src/app/assets/img/pre-treino.webp",
+    image: preTreino,
     badge: null,
   },
+
   {
     id: "xilitol-500g",
     name: "Xilitol Soldiers - 500g",
-    description: "Adoçante natural extraído do milho, com cerca de 40% menos calorias que o açúcar e índice glicêmico baixo. Substitui o açúcar na mesma proporção.",
+    description: "Adoçante natural.",
     price: 34.9,
-    image: "./src/app/assets/img/xilitol1.webp",
+    image: xilitol1,
     badge: null,
   },
+
   {
     id: "xilitol-1kg",
     name: "Xilitol Soldiers - 1kg",
-    description: "Mesma fórmula do xilitol de 500g, em embalagem de 1kg pra quem usa todo dia e não quer repor toda hora — melhor custo por grama.",
+    description: "Xilitol em embalagem de 1kg.",
     price: 59.9,
-    image: "./src/app/assets/img/xilitol2.webp",
+    image: xilitol2,
     badge: null,
   },
+
   {
     id: "vitamina-c-250g",
     name: "Vitamina C Soldiers - 250g",
-    description: "Vitamina C em pó (ácido ascórbico), embalagem de 250g. Reforça o sistema imunológico e auxilia na recuperação depois do treino pesado.",
+    description: "Vitamina C em pó.",
     price: 49.9,
-    image: "./src/app/assets/img/vitamina-c.webp",
+    image: vitaminaC,
     badge: null,
   },
+
   {
     id: "protein-bar-caixa12",
     name: "Protein Bar Soldiers - Caixa 12 Unidades",
-    description: "Caixa com 12 barras de proteína (~20g de proteína por unidade). Prática pra levar na mochila e resolver o pós-treino sem enrolação.",
+    description: "Caixa com 12 barras de proteína.",
     price: 89.9,
-    image: "./src/app/assets/img/protein-bar.webp",
+    image: proteinBar,
     badge: null,
   },
+
   {
     id: "whey-protein",
     name: "Whey Protein Soldiers",
-    description: "Pote de whey protein concentrado, com cerca de 24g de proteína por dose (30g). Recuperação muscular e ganho de massa magra.",
+    description: "Pote de whey protein concentrado.",
     price: 139.9,
-    image: "./src/app/assets/img/whey-protein.webp",
+    image: wheyProtein,
     badge: null,
   },
+
   {
     id: "kit-omega-multi",
     name: "Kit Ômega3 + Multivitamínico",
-    description: "Combo com Ômega 3 (120 cáps) e Multivitamínico (60 cáps) — a base completa pra treino, recuperação e imunidade, com desconto no combo.",
+    description: "Combo com Ômega 3 e Multivitamínico.",
     price: 239.9,
-    image: "./src/app/assets/img/omega3-multivitaminico.webp",
+    image: omega3Multivitaminico,
     badge: "COMBO",
   },
+
   {
     id: "kit-whey-creatina-pre-treino",
     name: "Kit Whey Protein + Creatina + Pré-Treino",
-    description: "Combo Whey Protein 1 kg, Creatina 300g e Pré-Treino — a base completa pra treino, recuperação e imunidade, com desconto no combo.",
+    description: "Combo Whey Protein + Creatina + Pré-Treino.",
     price: 239.9,
-    image: "./src/app/assets/img/whey-creatina-pre-treino.webp",
+    image: wheyCreatinaPreTreino,
     badge: "COMBO",
   },
 ];
+
+// export const products = [
+//   {
+//     id: "unidade",
+//     name: "Creatina - 1 Unidade 300g",
+//     description: "1 pote (100 doses). Ideal pra quem quer testar sem compromisso.",
+//     price: 79.9,
+//     image: "./src/app/assets/img/creatina1.webp",
+//     badge: null,
+//   },
+//   {
+//     id: "kit-duplo",
+//     name: "Creatina - 2 Unidade 300g",
+//     description: "2 potes. Melhor custo-benefício pra manter a rotina sem parar.",
+//     price: 139.9,
+//     image: "./src/app/assets/img/creatina2.webp",
+//     badge: "MAIS VENDIDO",
+//   },
+//   {
+//     id: "kit-trio",
+//     name: "Creatina - 3 Unidade 300g",
+//     description: "3 potes. Estoque pra vários meses de treino sem se preocupar.",
+//     price: 199.9,
+//     image: "./src/app/assets/img/creatina3.webp",
+//     badge: null,
+//   },
+//   {
+//     id: "creatina-refil-500g",
+//     name: "Creatina - 1 unidade 500g",
+//     description: "Creatina monohidratada pura, refil econômico de 500g (~166 doses de 3g). Mesma pureza da linha Soldiers, sem o custo do pote novo.",
+//     price: 99.9,
+//     image: "./src/app/assets/img/creatina4.webp",
+//     badge: null,
+//   },
+//   {
+//     id: "creatina-refil-500g-kit2",
+//     name: "Creatina - 2 unidade 500g",
+//     description: "2 creatina de 500g (~332 doses no total). Pra quem já usa Soldiers e quer manter o estoque sem parar a rotina.",
+//     price: 179.9,
+//     image: "./src/app/assets/img/creatina5.webp",
+//     badge: "MAIS VENDIDO",
+//   },
+//   {
+//     id: "omega3-60",
+//     name: "Ômega3 - 60 Cápsulas",
+//     description: "60 cápsulas de 1000mg de óleo de peixe. Cada porção (3 cáps) fornece 540mg de EPA e 360mg de DHA — suporte cardiovascular, cognitivo e anti-inflamatório.",
+//     price: 74.9,
+//     image: "./src/app/assets/img/omega3.webp",
+//     badge: null,
+//   },
+//   {
+//     id: "multivitaminico-60",
+//     name: "Multivitamínico - 60 Cápsulas",
+//     description: "60 cápsulas (1 ao dia, 2 meses de uso). Complexo com vitaminas A, C, D, E, B6, B12 e minerais como zinco e magnésio pra cobrir a rotina puxada.",
+//     price: 54.9,
+//     image: "./src/app/assets/img/multivitaminico.webp",
+//     badge: null,
+//   },
+//   {
+//     id: "pre-treino",
+//     name: "Pré-Treino Soldiers",
+//     description: "Fórmula com cafeína (~200mg por dose), beta-alanina, citrulina malato e creatina. 1 dose (8g) diluída em água, 20–30 min antes do treino.",
+//     price: 99.9,
+//     image: "./src/app/assets/img/pre-treino.webp",
+//     badge: null,
+//   },
+//   {
+//     id: "xilitol-500g",
+//     name: "Xilitol Soldiers - 500g",
+//     description: "Adoçante natural extraído do milho, com cerca de 40% menos calorias que o açúcar e índice glicêmico baixo. Substitui o açúcar na mesma proporção.",
+//     price: 34.9,
+//     image: "./src/app/assets/img/xilitol1.webp",
+//     badge: null,
+//   },
+//   {
+//     id: "xilitol-1kg",
+//     name: "Xilitol Soldiers - 1kg",
+//     description: "Mesma fórmula do xilitol de 500g, em embalagem de 1kg pra quem usa todo dia e não quer repor toda hora — melhor custo por grama.",
+//     price: 59.9,
+//     image: "./src/app/assets/img/xilitol2.webp",
+//     badge: null,
+//   },
+//   {
+//     id: "vitamina-c-250g",
+//     name: "Vitamina C Soldiers - 250g",
+//     description: "Vitamina C em pó (ácido ascórbico), embalagem de 250g. Reforça o sistema imunológico e auxilia na recuperação depois do treino pesado.",
+//     price: 49.9,
+//     image: "./src/app/assets/img/vitamina-c.webp",
+//     badge: null,
+//   },
+//   {
+//     id: "protein-bar-caixa12",
+//     name: "Protein Bar Soldiers - Caixa 12 Unidades",
+//     description: "Caixa com 12 barras de proteína (~20g de proteína por unidade). Prática pra levar na mochila e resolver o pós-treino sem enrolação.",
+//     price: 89.9,
+//     image: "./src/app/assets/img/protein-bar.webp",
+//     badge: null,
+//   },
+//   {
+//     id: "whey-protein",
+//     name: "Whey Protein Soldiers",
+//     description: "Pote de whey protein concentrado, com cerca de 24g de proteína por dose (30g). Recuperação muscular e ganho de massa magra.",
+//     price: 139.9,
+//     image: "./src/app/assets/img/whey-protein.webp",
+//     badge: null,
+//   },
+//   {
+//     id: "kit-omega-multi",
+//     name: "Kit Ômega3 + Multivitamínico",
+//     description: "Combo com Ômega 3 (120 cáps) e Multivitamínico (60 cáps) — a base completa pra treino, recuperação e imunidade, com desconto no combo.",
+//     price: 239.9,
+//     image: "./src/app/assets/img/omega3-multivitaminico.webp",
+//     badge: "COMBO",
+//   },
+//   {
+//     id: "kit-whey-creatina-pre-treino",
+//     name: "Kit Whey Protein + Creatina + Pré-Treino",
+//     description: "Combo Whey Protein 1 kg, Creatina 300g e Pré-Treino — a base completa pra treino, recuperação e imunidade, com desconto no combo.",
+//     price: 239.9,
+//     image: "./src/app/assets/img/whey-creatina-pre-treino.webp",
+//     badge: "COMBO",
+//   },
+// ];
