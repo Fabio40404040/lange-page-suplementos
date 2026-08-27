@@ -4,7 +4,7 @@
 
 import { products } from "./date/products.js";
 import { renderProductList } from "./components/ProductList.js";
-import { initNavProductsMenu } from "./components/NavProductsMenu.js";
+import { initNavProductsMenu } from "./components/NavProductsMenu.js.js";
 
 export function initProducts(cart) {
   const container = document.querySelector("#products-grid");
