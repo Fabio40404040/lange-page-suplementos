@@ -156,6 +156,12 @@ function formatPrice(value) {
   return value.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 }
 
+function escapeHtml(value) {
+  return String(value).replace(/[&<>"']/g, (char) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;",
+  })[char]);
+}
+
 export class Cart {
   constructor() {
     this.items = loadCart();
@@ -226,9 +232,9 @@ export function renderCart(cart, elements, onCheckout) {
       const row = document.createElement("div");
       row.className = "cart-item";
       row.innerHTML = `
-        <img src="${item.image}" alt="${item.name}">
+        <img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.name)}">
         <div class="cart-item-info">
-          <p class="cart-item-name">${item.name}</p>
+          <p class="cart-item-name">${escapeHtml(item.name)}</p>
           <p class="cart-item-price">${formatPrice(item.price)}</p>
           <div class="cart-item-qty">
             <button type="button" class="qty-btn js-qty-minus" aria-label="Diminuir quantidade">

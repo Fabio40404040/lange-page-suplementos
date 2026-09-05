@@ -21,4 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const cart = initCart();
   initProducts(cart);
   initWhatsApp();
+
+  window.addEventListener("forge:catalog-changed", () => initProducts(cart));
+  window.addEventListener("storage", (event) => {
+    if (event.key === "forge:demo-catalog:v1") initProducts(cart);
+  });
 });

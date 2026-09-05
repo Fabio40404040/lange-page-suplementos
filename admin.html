@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Painel demonstrativo | Creatina Forge</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+<body class="admin-page">
+  <main id="login-view" class="login-shell">
+    <section class="login-card" aria-labelledby="login-title">
+      <a class="admin-brand" href="/"><img src="/forge-logo.svg" alt="">CREATINA<span>FORGE</span></a>
+      <p class="demo-label">Projeto de portfólio</p>
+      <h1 id="login-title">Painel do vendedor</h1>
+      <p class="login-copy">Entre com o acesso demonstrativo para gerenciar a vitrine. Nenhum dado real é solicitado.</p>
+      <div class="demo-access">
+        <span>Acesso para teste</span>
+        <code>vendedor@demo.com</code>
+        <code>forge123</code>
+      </div>
+      <form id="login-form" class="admin-form">
+        <label>E-mail<input id="login-email" type="email" value="vendedor@demo.com" autocomplete="username" required></label>
+        <label>Senha<input id="login-password" type="password" value="forge123" autocomplete="current-password" required></label>
+        <p id="login-error" class="form-error" role="alert"></p>
+        <button class="admin-btn admin-btn-primary" type="submit">Entrar no painel</button>
+      </form>
+      <a class="back-link" href="/">← Voltar para a loja</a>
+    </section>
+  </main>
+
+  <div id="dashboard-view" class="dashboard is-hidden">
+    <aside class="admin-sidebar">
+      <a class="admin-brand" href="/"><img src="/forge-logo.svg" alt="">CREATINA<span>FORGE</span></a>
+      <p class="sidebar-caption">Painel demonstrativo</p>
+      <nav><a class="is-active" href="#catalogo">Catálogo</a><a href="/" target="_blank">Ver loja ↗</a></nav>
+      <button id="logout-button" class="sidebar-logout" type="button">Sair da demonstração</button>
+    </aside>
+
+    <main class="admin-main">
+      <header class="admin-header">
+        <div><p class="demo-label">Visão geral</p><h1>Produtos e preços</h1><p>As mudanças ficam salvas somente neste navegador.</p></div>
+        <button id="new-product-button" class="admin-btn admin-btn-primary" type="button">+ Novo produto</button>
+      </header>
+
+      <section class="stats-grid" aria-label="Resumo do catálogo">
+        <article><span>Produtos</span><strong id="stat-total">0</strong></article>
+        <article><span>Visíveis</span><strong id="stat-active">0</strong></article>
+        <article><span>Ocultos</span><strong id="stat-hidden">0</strong></article>
+      </section>
+
+      <section id="catalogo" class="catalog-panel">
+        <div class="panel-heading">
+          <div><h2>Catálogo</h2><p>Edite, oculte ou remova os itens da vitrine.</p></div>
+          <button id="reset-button" class="admin-btn admin-btn-secondary" type="button">Restaurar catálogo</button>
+        </div>
+        <div id="admin-products" class="admin-products"></div>
+      </section>
+    </main>
+  </div>
+
+  <dialog id="product-dialog" class="product-dialog">
+    <form id="product-form" method="dialog" class="product-form">
+      <div class="dialog-heading"><div><p class="demo-label">Catálogo</p><h2 id="dialog-title">Novo produto</h2></div><button id="dialog-close" class="icon-button" type="button" aria-label="Fechar">×</button></div>
+      <input id="product-id" type="hidden">
+      <div class="form-grid">
+        <label class="field-wide">Nome do produto<input id="product-name" maxlength="120" required></label>
+        <label>Preço (R$)<input id="product-price" type="number" min="0" step="0.01" required></label>
+        <label>Ordem na vitrine<input id="product-order" type="number" min="0" step="1" required></label>
+        <label class="field-wide">Descrição<textarea id="product-description" maxlength="500" rows="4" required></textarea></label>
+        <label class="field-wide">Imagem por endereço<input id="product-image" placeholder="/products/minha-imagem.webp ou https://..."></label>
+        <label class="field-wide upload-field">Ou escolha uma imagem<input id="product-file" type="file" accept="image/png,image/jpeg,image/webp"><small>Para a demonstração, use arquivos de até 700 KB.</small></label>
+        <label>Selo opcional<input id="product-badge" maxlength="40" placeholder="Ex.: MAIS VENDIDO"></label>
+        <label class="switch-field"><input id="product-active" type="checkbox" checked><span>Produto visível na loja</span></label>
+      </div>
+      <p id="product-error" class="form-error" role="alert"></p>
+      <div class="dialog-actions"><button id="cancel-product" class="admin-btn admin-btn-secondary" type="button">Cancelar</button><button class="admin-btn admin-btn-primary" type="submit">Salvar produto</button></div>
+    </form>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="/src/admin.js"></script>
+</body>
+</html>

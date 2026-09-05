@@ -5,6 +5,12 @@ function formatPrice(value) {
   return value.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 }
 
+function escapeHtml(value) {
+  return String(value).replace(/[&<>"']/g, (char) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;",
+  })[char]);
+}
+
 export function createProductCard(product, onAddToCart) {
   const card = document.createElement("article");
   card.className = "offer-card" + (product.badge ? " offer-card--highlight" : "");
@@ -12,11 +18,11 @@ export function createProductCard(product, onAddToCart) {
   card.id = `product-${product.id}`;
 
   card.innerHTML = `
-    ${product.badge ? `<span class="offer-badge">${product.badge}</span>` : ""}
-    <img src="${product.image}" alt="${product.name}">
+    ${product.badge ? `<span class="offer-badge">${escapeHtml(product.badge)}</span>` : ""}
+    <img src="${escapeHtml(product.image)}" alt="${escapeHtml(product.name)}">
     <div class="offer-body">
-      <h3>${product.name}</h3>
-      <p>${product.description}</p>
+      <h3>${escapeHtml(product.name)}</h3>
+      <p>${escapeHtml(product.description)}</p>
       <p class="offer-price">${formatPrice(product.price)}</p>
       <button type="button" class="btn btn-primary btn-block js-add-to-cart">
         Adicionar ao carrinho

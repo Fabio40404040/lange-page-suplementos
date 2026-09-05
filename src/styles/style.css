@@ -38,6 +38,29 @@ body {
   overflow-x: hidden;
 }
 
+.demo-ribbon {
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 8px 18px;
+  background: var(--sand);
+  color: var(--bg);
+  font: 500 0.74rem var(--font-mono);
+  text-align: center;
+}
+.demo-ribbon strong { text-transform: uppercase; letter-spacing: .05em; }
+.demo-ribbon a {
+  padding: 4px 9px;
+  border: 1px solid currentColor;
+  border-radius: var(--radius);
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.demo-ribbon a:hover { background: var(--bg); color: var(--sand); }
+
 img { max-width: 100%; display: block; }
 
 .container {
@@ -442,6 +465,14 @@ a { color: inherit; }
   max-width: 46ch;
   margin: 0 auto;
 }
+.footer-admin-link {
+  display: inline-block;
+  margin-top: 16px;
+  color: var(--sand);
+  font: 500 .72rem var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
 
 /* -------- whatsapp fixo -------- */
 .whatsapp-fixed {
@@ -481,6 +512,7 @@ a { color: inherit; }
 }
 
 @media (max-width: 560px) {
+  .demo-ribbon { align-items: stretch; flex-direction: column; gap: 7px; }
   .tags-grid { grid-template-columns: 1fr; }
   .container { padding: 0 18px; }
   .hero-whats-btn { top: 16px; right: 16px; padding: 10px 14px; font-size: 0.72rem; }

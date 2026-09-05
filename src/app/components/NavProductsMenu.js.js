@@ -9,11 +9,14 @@ export function initNavProductsMenu(products) {
   if (!wrapper || !toggle || !panel) return;
 
   // monta a lista de produtos dentro do painel (só o nome)
+  const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (char) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;",
+  })[char]);
   panel.innerHTML = products
     .map(
       (product) => `
-        <a class="nav-dropdown-item" href="#product-${product.id}">
-          <span>${product.name}</span>
+        <a class="nav-dropdown-item" href="#product-${escapeHtml(product.id)}">
+          <span>${escapeHtml(product.name)}</span>
         </a>
       `
     )

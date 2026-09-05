@@ -1,1 +1,0 @@
-CREATE INDEX `idx_products_active_sort_order` ON `products` (`active`,`sort_order`);
