@@ -1,33 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-  <!-- Fundo -->
-  <rect width="512" height="512" rx="18" fill="#121310"/>
-
-  <!-- Escudo -->
-  <path
-    d="M256 62
-       L426 139
-       V273
-       C426 376 360 439 256 476
-       C152 439 86 376 86 273
-       V139 Z"
-    fill="none"
-    stroke="#C84F2D"
-    stroke-width="32"
-    stroke-linejoin="miter"/>
-
-  <!-- FBI -->
-  <text
-    x="256"
-    y="275"
-    text-anchor="middle"
-    font-family="Arial, Helvetica, sans-serif"
-    font-size="122"
-    font-weight="900"
-    letter-spacing="2"
-    fill="#D7C27F">FBI</text>
-
-  <!-- Detalhe inferior -->
-  <path
-    d="M166 318 L346 318 L256 344 Z"
-    fill="#C84F2D"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="10" fill="#14140f"/>
+  <path d="M32 5 53 15v17c0 13.4-8.4 22.7-21 28-12.6-5.3-21-14.6-21-28V15L32 5Z" fill="none" stroke="#c1502e" stroke-width="4"/>
+  <path d="M35.5 14c1 7.5-6.5 10-6.5 17 0 3 1.7 5 4 6.4-1-4 2.1-6.2 5.2-9.3 3.9 4.1 6.8 7.7 6.8 12.7C45 48.4 39.3 53 32 53s-13-4.6-13-12.2C19 31.3 28.3 26.4 35.5 14Z" fill="#c2b280"/>
+  <path d="M32 48c-3.4-1-5.3-3.4-5.3-6.5 0-2.9 1.9-5.1 4.8-7.7-.2 4.6 4.4 5.6 4.4 9.3 0 2.2-1.3 4-3.9 4.9Z" fill="#c1502e"/>
 </svg>

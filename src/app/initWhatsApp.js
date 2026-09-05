@@ -2,8 +2,9 @@
 // Aplica o mesmo número de WhatsApp em todos os botões de contato direto
 // (banner, botão flutuante, header), pra nunca ficar número divergente.
 
-const WHATSAPP_NUMBER = "5588999523807";
-const DEFAULT_MESSAGE = "Tenho interesse na Creatina Soldiers.";
+// Número propositalmente fictício para esta demonstração.
+const WHATSAPP_NUMBER = "5500000000000";
+const DEFAULT_MESSAGE = "Tenho interesse na Creatina Forge.";
 
 export function initWhatsApp() {
   const contactButtons = document.querySelectorAll("[data-whatsapp-contact]");

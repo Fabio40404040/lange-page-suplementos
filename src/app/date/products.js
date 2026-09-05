@@ -2,21 +2,17 @@
 // Base de dados dos produtos exibidos na landing page.
 // "date" = nome da pasta conforme a estrutura definida no projeto.
 
-import creatina300 from "../assets/img/creatina1.webp";
-import creatina2 from "../assets/img/creatina2.webp";
-import creatina3 from "../assets/img/creatina3.webp";
-import creatina4 from "../assets/img/creatina4.webp";
-import creatina5 from "../assets/img/creatina5.webp";
-import omega3 from "../assets/img/omega3.webp";
-import multivitaminico from "../assets/img/multivitaminico.webp";
-import preTreino from "../assets/img/pre-treino.webp";
-import xilitol1 from "../assets/img/xilitol1.webp";
-import xilitol2 from "../assets/img/xilitol2.webp";
-import vitaminaC from "../assets/img/vitamina-c.webp";
-import proteinBar from "../assets/img/protein-bar.webp";
-import wheyProtein from "../assets/img/whey-protein.webp";
-import omega3Multivitaminico from "../assets/img/omega3-multivitaminico.webp";
-import wheyCreatinaPreTreino from "../assets/img/whey-creatina-pre-treino.webp";
+import creatina300 from "../assets/img/fake-creatina.webp";
+import creatinaRefil from "../assets/img/fake-creatina-refil.webp";
+import omega3 from "../assets/img/fake-omega3.webp";
+import multivitaminico from "../assets/img/fake-multivitaminico.webp";
+import preTreino from "../assets/img/fake-pre-treino.webp";
+import xilitol from "../assets/img/fake-xilitol.webp";
+import vitaminaC from "../assets/img/fake-vitamina-c.webp";
+import proteinBar from "../assets/img/fake-protein-bar.webp";
+import wheyProtein from "../assets/img/fake-whey.webp";
+import omega3Multivitaminico from "../assets/img/fake-kit-omega-multi.webp";
+import wheyCreatinaPreTreino from "../assets/img/fake-kit-whey-creatina-pre.webp";
 
 export const products = [
   {
@@ -33,7 +29,7 @@ export const products = [
     name: "Creatina - 2 Unidade 300g",
     description: "2 potes. Melhor custo-benefício pra manter a rotina sem parar.",
     price: 139.9,
-    image: creatina2,
+    image: creatina300,
     badge: "MAIS VENDIDO",
   },
 
@@ -42,7 +38,7 @@ export const products = [
     name: "Creatina - 3 Unidade 300g",
     description: "3 potes. Estoque pra vários meses de treino sem se preocupar.",
     price: 199.9,
-    image: creatina3,
+    image: creatina300,
     badge: null,
   },
 
@@ -51,7 +47,7 @@ export const products = [
     name: "Creatina - 1 unidade 500g",
     description: "Creatina monohidratada pura, refil econômico de 500g.",
     price: 99.9,
-    image: creatina4,
+    image: creatinaRefil,
     badge: null,
   },
 
@@ -60,7 +56,7 @@ export const products = [
     name: "Creatina - 2 unidade 500g",
     description: "2 creatina de 500g.",
     price: 179.9,
-    image: creatina5,
+    image: creatinaRefil,
     badge: "MAIS VENDIDO",
   },
 
@@ -84,7 +80,7 @@ export const products = [
 
   {
     id: "pre-treino",
-    name: "Pré-Treino Soldiers",
+    name: "Pré-Treino Forge",
     description: "Fórmula com cafeína, beta-alanina, citrulina malato e creatina.",
     price: 99.9,
     image: preTreino,
@@ -93,25 +89,25 @@ export const products = [
 
   {
     id: "xilitol-500g",
-    name: "Xilitol Soldiers - 500g",
+    name: "Xilitol Forge - 500g",
     description: "Adoçante natural.",
     price: 34.9,
-    image: xilitol1,
+    image: xilitol,
     badge: null,
   },
 
   {
     id: "xilitol-1kg",
-    name: "Xilitol Soldiers - 1kg",
+    name: "Xilitol Forge - 1kg",
     description: "Xilitol em embalagem de 1kg.",
     price: 59.9,
-    image: xilitol2,
+    image: xilitol,
     badge: null,
   },
 
   {
     id: "vitamina-c-250g",
-    name: "Vitamina C Soldiers - 250g",
+    name: "Vitamina C Forge - 250g",
     description: "Vitamina C em pó.",
     price: 49.9,
     image: vitaminaC,
@@ -120,7 +116,7 @@ export const products = [
 
   {
     id: "protein-bar-caixa12",
-    name: "Protein Bar Soldiers - Caixa 12 Unidades",
+    name: "Protein Bar Forge - Caixa 12 Unidades",
     description: "Caixa com 12 barras de proteína.",
     price: 89.9,
     image: proteinBar,
@@ -129,7 +125,7 @@ export const products = [
 
   {
     id: "whey-protein",
-    name: "Whey Protein Soldiers",
+    name: "Whey Protein Forge",
     description: "Pote de whey protein concentrado.",
     price: 139.9,
     image: wheyProtein,

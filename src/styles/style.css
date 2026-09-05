@@ -1,5 +1,5 @@
 /* =====================================================
-   CREATINA SOLDIERS — design tokens
+   CREATINA FORGE — design tokens
    Paleta: base #14140F, olive #4B5320, sand #C2B280,
            rust #C1502E, card #23241C, off-white #EDEAE0
 ===================================================== */
@@ -118,6 +118,9 @@ a { color: inherit; }
   gap: 24px;
 }
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-family: var(--font-display);
   font-size: 1.3rem;
   letter-spacing: 0.02em;
@@ -126,6 +129,8 @@ a { color: inherit; }
   white-space: nowrap;
 }
 .brand span { color: var(--rust); }
+.brand-mark { width: 30px; height: 30px; flex: 0 0 auto; }
+.brand-footer .brand-mark { width: 26px; height: 26px; }
 
 .main-nav ul {
   list-style: none;
@@ -395,7 +400,7 @@ a { color: inherit; }
   padding: 20px;
 }
 .offer-body { padding: 22px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
-.offer-body h3 { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.02em; font-size: 1.3rem; }
+.offer-body h2, .offer-body h3 { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.02em; font-size: 1.3rem; }
 .offer-body p { color: var(--ink-dim); font-size: 0.92rem; line-height: 1.35; margin: 0; text-align: justify; }
 .offer-body p:not(.offer-price) { flex: 1; }
 

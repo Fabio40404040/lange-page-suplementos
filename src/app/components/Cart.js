@@ -133,7 +133,7 @@
 // Estado do carrinho + renderização do painel (drawer) do carrinho.
 // O estado fica salvo no localStorage, então o carrinho sobrevive a um refresh.
 
-const STORAGE_KEY = "soldiers:cart";
+const STORAGE_KEY = "forge:cart";
 
 function loadCart() {
   try {

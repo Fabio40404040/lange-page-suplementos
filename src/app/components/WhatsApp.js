@@ -1,7 +1,8 @@
 // src/app/components/WhatsApp.js
 // Monta a mensagem do pedido a partir do carrinho e abre o WhatsApp.
 
-const WHATSAPP_NUMBER = "5588999523807"; // formato: DDI + DDD + número
+// Número propositalmente fictício para esta demonstração.
+const WHATSAPP_NUMBER = "5500000000000";
 
 function formatPrice(value) {
   return value.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
@@ -14,7 +15,7 @@ function toAbsoluteImageUrl(relativePath) {
 
 export function buildOrderMessage(cart) {
   const lines = [
-    "Olá! Quero fazer um pedido da Creatina Soldiers:",
+    "Olá! Quero fazer um pedido da Creatina Forge:",
     "",
     ...cart.items.map(
       (item) =>
