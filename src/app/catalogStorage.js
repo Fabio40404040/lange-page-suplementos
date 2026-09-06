@@ -8,7 +8,13 @@ const cloneDefaults = () => defaultProducts.map((product) => ({ ...product }));
 export function getProducts() {
   try {
     const saved = JSON.parse(localStorage.getItem(CATALOG_KEY));
-    if (Array.isArray(saved)) return saved;
+    if (Array.isArray(saved)) {
+      return saved.map((product) => {
+        if (!String(product.image || "").startsWith("/products/")) return product;
+        const original = defaultProducts.find((item) => item.id === product.id);
+        return original ? { ...product, image: original.image } : product;
+      });
+    }
   } catch {
     // Um valor inválido é substituído pelo catálogo original.
   }
