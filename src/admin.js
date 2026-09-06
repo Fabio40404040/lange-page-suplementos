@@ -144,7 +144,7 @@ $("#product-file").addEventListener("change", (event) => {
   const file = event.target.files[0];
   if (!file) return;
   if (file.size > 700 * 1024) {
-    $("#product-error").textContent = "A imagem deve ter no máximo 700 KB.";
+    $("#product-error").textContent = "A imagem deve ter no máximo 700 KB. Reduza para 1000 × 1000 px ou use o formato WebP.";
     event.target.value = "";
     return;
   }

@@ -69,7 +69,14 @@
         <label>Ordem na vitrine<input id="product-order" type="number" min="0" step="1" required></label>
         <label class="field-wide">Descrição<textarea id="product-description" maxlength="500" rows="4" required></textarea></label>
         <label class="field-wide">Imagem por endereço<input id="product-image" placeholder="https://exemplo.com/imagem.webp"></label>
-        <label class="field-wide upload-field">Ou escolha uma imagem<input id="product-file" type="file" accept="image/png,image/jpeg,image/webp"><small>Para a demonstração, use arquivos de até 700 KB.</small></label>
+        <label class="field-wide upload-field">
+          Ou escolha uma imagem
+          <input id="product-file" type="file" accept="image/png,image/jpeg,image/webp">
+          <small class="upload-help">
+            <span><strong>Tamanho recomendado:</strong> 1000 × 1000 px, produto centralizado e arquivo de até 700 KB.</span>
+            <span>Foto pelo celular? Use boa iluminação e um fundo liso. Se desejar, <a href="https://www.remove.bg/pt-br" target="_blank" rel="noreferrer">remova o fundo gratuitamente no remove.bg ↗</a> e salve a imagem em PNG.</span>
+          </small>
+        </label>
         <label>Selo opcional<input id="product-badge" maxlength="40" placeholder="Ex.: MAIS VENDIDO"></label>
         <label class="switch-field"><input id="product-active" type="checkbox" checked><span>Produto visível na loja</span></label>
       </div>

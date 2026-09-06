@@ -87,7 +87,10 @@ input:focus, textarea:focus { border-color: var(--sand); box-shadow: 0 0 0 2px r
 .icon-button { border: 0; background: none; color: var(--muted); font-size: 2rem; line-height: 1; cursor: pointer; }
 .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .field-wide { grid-column: 1 / -1; }
-.upload-field small { color: var(--muted); font-weight: 400; }
+.upload-help { display: grid; gap: 4px; color: var(--muted); font-weight: 400; line-height: 1.45; }
+.upload-help strong { color: var(--text); }
+.upload-help a { color: var(--accent); font-weight: 700; text-underline-offset: 3px; }
+.upload-help a:hover { text-decoration-thickness: 2px; }
 .switch-field { align-content: end; grid-template-columns: auto 1fr !important; align-items: center; padding-bottom: 12px; }
 .switch-field input { width: 18px; height: 18px; accent-color: var(--rust); }
 .dialog-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 8px; }
